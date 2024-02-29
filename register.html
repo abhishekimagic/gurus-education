@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <link rel="icon" href="images/favicon.png" sizes="16x16">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/fontawesome-all.min.css">-->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Home | Gurus Education</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-5 col-lg-6">
+                    <div class="logo-wrapper">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7 col-md-7 col-lg-6">
+                    <div class="header-right">
+                        <div class="header-call">
+                            <a href="tel:+15105732497"><i class="las la-phone"></i> +1-510-573-2497</a>
+                        </div>
+                        <div class="header-enquire">
+                            <button onclick="enquireFunction()">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <div class="enquire-popup" id="enquireform" style="display: none;">
+        <div class="enquire-form">
+            <a href="" class="enquire-close" onclick="enquireClose()"><i class="las la-times"></i></a>
+            <form class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Phone no.">
+                </div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Select courses you are interested in</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Young Masters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Confident Speakers and Writers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Advanced Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Smart Money & Investing
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="4" placeholder="Your question"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn-cus btn-dark-blue">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+    
+    <div class="page-section home-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="heading">
+                        <h3> 
+                            <span class="heading-icon">
+                                Register
+                                <img src="images/heading-bg.png" alt="">
+                            </span> 
+                            Online
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="register-info">
+                        <h5 class="fw-bold text-decoration-underline mb-4">Course Info:</h5>
+                        <dl>
+                            <dt>Class Mode:</dt>
+                            <dd>Online</dd>
+                            <dt>Class Title:</dt>
+                            <dd>PF101 - Money Money 101</dd>
+                            <dt>This class is run and managed by:</dt>
+                            <dd>Gurus Education <br>
+                                510-573-2497 <br>
+                                info@guruseducation.com
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="register-form">
+                        <h5 class="fw-bold text-decoration-underline mb-4">Fill Form:</h5>
+                        <form>
+                            <fieldset>
+                                <legend>Child Details</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Student First Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Student Last Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label">Grade</label>
+                                        <select class="form-select">
+                                            <option>Select Grade</option>
+                                            <option>3rd Grade</option>
+                                            <option>4th Grade</option>
+                                            <option>5th Grade</option>
+                                            <option>6th Grade</option>
+                                            <option>7th Grade</option>
+                                            <option>8th Grade</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Primary Contact</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Name</label>
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Relationship</label>
+                                        <input type="text" class="form-control" placeholder="Relationship">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Phone No</label>
+                                        <input type="text" class="form-control" placeholder="Phone No">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Secondary Contact</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Name</label>
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Relationship</label>
+                                        <input type="text" class="form-control" placeholder="Relationship">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Phone No</label>
+                                        <input type="text" class="form-control" placeholder="Phone No">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Additional Information</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label">Checkout Preference</label>
+                                        <select class="form-select">
+                                            <option>---Select Checkout Preference--- </option>
+                                            <option>Self Checkout</option>
+                                            <option>Parents Pickup</option>
+                                            <option>Escort to onsite daycare</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label  class="form-label">Notes for Teacher</label>
+                                        <input type="text" class="form-control" placeholder="Notes for Teacher">
+                                    </div>
+                                    <div class="col-12 col-md-12 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="additional1" checked>
+                                            <label class="form-check-label" for="additional1">
+                                                I hereby authorize Gurus Education to publish photographs taken of my child in class for the use in company's Advertising, including those that are printed, posted online or created in video form. 
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-12 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="additional2" checked>
+                                            <label class="form-check-label" for="additional2">
+                                                Sign me up for monthly newsletter. Newsletters are sent to announce upcoming classes and tournaments.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>How did you hear about us?</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="form-label">Information Source</label>
+                                        <select class="form-select">
+                                            <option>---Select --- </option>
+                                            <option>Facebook</option>
+                                            <option>Radio Ad</option>
+                                            <option>Google Search</option>
+                                            <option>LinkedIn</option>
+                                            <option>Peach Jar</option>
+                                            <option>School Communication</option>
+                                            <option>Emails</option>
+                                            <option>Referred by Current Student</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Coupon</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <label class="form-label">Coupon Code</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Coupon Code" >
+                                            <button class="btn btn-dark-blue" type="button" >Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="payment" id="payment">
+                                        <label class="form-check-label" for="payment">
+                                            One-time Payment Plan: $199
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <button type="submit" class="btn btn-dark-blue">Pay Online</button>
+                                    <button type="submit" class="btn btn-dark-blue">Pay By Mail</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="need-help-bg" onclick="helpClose()" style="transform: translateY(100%);"></div>
+    <div class="need-help-section" id="help-form" style="transform: translateY(100%);">
+        <div class="need-help-btn">
+            <button onclick="helpFunction()">Need More Help?</button>
+        </div>
+        <div class="need-help-form">
+            <form class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Phone no.">
+                </div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Select courses you are interested in</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Young Masters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Confident Speakers and Writers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Advanced Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Smart Money & Investing
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="4" placeholder="Your question"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn-cus btn-dark-blue">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-content">
+                            <h2>Please feel free to get in touch with us</h2>
+                            <div class="footer-contact-item">
+                                <span>Call Us or Text Us:</span>
+                                <a href="tel:+15105732497">+1-510-573-2497</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <span>Email Us:</span>
+                                <a href="mailto:info@guruseducation.com">info@guruseducation.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-form">
+                            <h5>Speak to one of our Advisors about a suitable program for you child?</h5>
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Phone no.">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-select">
+                                      <option selected disabled>Select Child Age</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                    </select>
+                                  </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" rows="4" placeholder="Any Concerns"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-cus btn-dark-blue">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2022 Gurus Educational Services. All rights reserved
+        </div>
+    </footer>
+
+    
+    
+    
+    
+    
+    
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.owl-one').owlCarousel({
+            margin: 0,
+            nav: true,
+            loop: true,
+            autoplay:true,
+            dots:false,
+            smartSpeed: 2000,
+            autoplayTimeout: 5000,
+            autoplayHoverPause:true,
+            navText:['<i class="las la-angle-left"></i>','<i class="las la-angle-right"></i>'],
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+        });
+        $('.owl-two').owlCarousel({
+            margin: 0,
+            nav: true,
+            loop: true,
+            autoplay:true,
+            dots:false,
+            navText:['<i class="las la-angle-left"></i>','<i class="las la-angle-right"></i>'],
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 1
+              }
+            }
+        });
+    });
+</script>
+<script>
+    function helpFunction() {
+        if(document.getElementById('help-form').style.transform == "translateY(100%)"){ 
+            document.getElementById('help-form').style.transform = "translateY(0)";
+            document.getElementById('need-help-bg').style.transform = "translateY(0)";
+        }
+        else{ 
+            document.getElementById('help-form').style.transform = "translateY(100%)";
+            document.getElementById('need-help-bg').style.transform = "translateY(100%)";
+        }
+    }
+    function helpClose() {
+        document.getElementById('help-form').style.transform = "translateY(100%)";
+        document.getElementById('need-help-bg').style.transform = "translateY(100%)";
+    }
+    function enquireFunction() {
+        if(document.getElementById('enquireform').style.display == "none"){ 
+            document.getElementById('enquireform').style.display = "flex";
+        }
+        else{ 
+            document.getElementById('enquireform').style.display = "none";
+            
+        }
+    }
+    function enquireClose() {
+        document.getElementById('enquireform').style.display = "none";
+    }
+</script>
+    
+</body>
+</html>
