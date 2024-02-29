@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <link rel="icon" href="images/favicon.png" sizes="16x16">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/fontawesome-all.min.css">-->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Home | Gurus Education</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-5 col-lg-6">
+                    <div class="logo-wrapper">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7 col-md-7 col-lg-6">
+                    <div class="header-right">
+                        <div class="header-call">
+                            <a href="tel:+15105732497"><i class="las la-phone"></i> +1-510-573-2497</a>
+                        </div>
+                        <div class="header-enquire">
+                            <button onclick="enquireFunction()">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <div class="offer-popup" id="offerpopup">
+        <div class="offer-popup-block">
+            <div class="row ">
+                <div class="col-12 col-md-5">
+                    <div class="offer-popup-banner">
+                        <img src="images/offer-popup.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="offer-popup-content">
+                        <div class="offer-popup-close" onclick="offerClose()"><i class="las la-times"></i></div>
+                        <h3>Download Free <span>Brochure</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="offer-popup-form">
+                        <form class="row g-3">
+                            <div class="col-12 col-md-4">
+                                <input type="text" class="form-control" placeholder="Enter Name">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <input type="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="col-12 col-md-4 d-grid">
+                                <button type="submit" class="btn btn-dark-blue">Download Brochure</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="enquire-popup" id="enquireform" style="display: none;">
+        <div class="enquire-form">
+            <a href="javascript:void(0)" class="enquire-close" onclick="enquireClose()"><i class="las la-times"></i></a>
+            <form class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Phone no.">
+                </div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Select courses you are interested in</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Young Masters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Confident Speakers and Writers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Advanced Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Smart Money & Investing
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="4" placeholder="Your question"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn-cus btn-dark-blue">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+    <div class="main-banner">
+        <img class="main-banner-bg main-bg-desktop" src="images/main-banner.png" alt="">
+        <img class="main-banner-bg main-bg-laptop" src="images/main-banner-m.png" alt="">
+        <div class="main-banner-caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <h2>Teaching youth <br>
+                            essential life <br>
+                            skills</h2>
+                        <div class="main-banner-cta">
+                            <a href="#" class="btn-cus btn-light-blue me-2" onclick="enquireFunction()">Send us a question</a>
+                            <a href="#" class="btn-cus btn-white" >Schedule an assessment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="home-about-content">
+                        <div class="heading">
+                            <h3>About 
+                                <span class="heading-icon">
+                                    Gurus
+                                    <img src="images/heading-bg.png" alt="">
+                                </span> 
+                                Education
+                            </h3>
+                        </div>
+                        <ul>
+                            <li><i class="las la-arrow-right"></i>Since 2010 Gurus Educational Services has been conducting basic and advanced programs and tournaments in Public Speaking, Debates, and Personal Finance throughout the Bay Area and more recently Online.</li>
+                            <li><i class="las la-arrow-right"></i>We have helped thousands of students overcome the fear of public speaking and provide forums to engage in constructive debating. Our classes and camps are very well attended. Our staff includes highly qualified and talented teachers.</li>
+                            <li><i class="las la-arrow-right"></i>Cultivate the leadership skills from this tender age in the friendliest and most fun way.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="home-about-vdo">
+                        <div class="home-about-vdo-icon" onclick="lightbox_open();">
+                            <i class="las la-play"></i>
+                        </div>
+                        <div id="fade" onClick="lightbox_close();"></div>
+                        <div id="light">
+                            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                            <video id="VisaChipCardVideo" width="600" controls>
+                                <source src="images/GurusTeachingMethods.mp4" type="video/mp4">
+                                <!--Browser does not support <video> tag -->
+                            </video>
+                        </div>
+                        <script>
+                            window.document.onkeydown = function(e) {
+                                if (!e) {
+                                    e = event;
+                                }
+                                if (e.keyCode == 27) {
+                                    lightbox_close();
+                                }
+                                }
+
+                                function lightbox_open() {
+                                var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+                                window.scrollTo(0, 0);
+                                document.getElementById('light').style.display = 'block';
+                                document.getElementById('fade').style.display = 'block';
+                                lightBoxVideo.play();
+                                }
+
+                                function lightbox_close() {
+                                var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+                                document.getElementById('light').style.display = 'none';
+                                document.getElementById('fade').style.display = 'none';
+                                lightBoxVideo.pause();
+                                }
+                        </script>
+  
+                        <img src="images/hex-dots.png" alt="" class="home-about-bg1">
+                        <img src="images/dot.png" alt="" class="home-about-bg2">
+                        <div class="home-about-img">
+                            <img src="images/about-vdo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-program">
+        <div class="container">
+            <div class="heading heading-light text-center">
+                <h3>About 
+                    <span class="heading-icon">
+                        Gurus
+                        <img src="images/heading-bg.png" alt="">
+                    </span> 
+                    Education
+                </h3>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 col-lg-4">
+                    <div class="home-program-item">
+                        <div class="home-program-icon">
+                            <div class="home-program-icon-shape">
+                                <i class="las la-microphone"></i>
+                            </div>
+                        </div>
+                        <div class="home-program-content">
+                            <div class="home-program-detail">
+                                <h4>Public Speaking</h4>
+                                <ul>
+                                    <li><i class="las la-arrow-right"></i>Building Confidence in Public Speaking</li>
+                                    <li><i class="las la-arrow-right"></i>Teach Speech Writing</li>
+                                    <li><i class="las la-arrow-right"></i>Benefit 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="home-program-item home-program-item-blue">
+                        <div class="home-program-icon">
+                            <div class="home-program-icon-shape">
+                                <i class="las la-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="home-program-content">
+                            <div class="home-program-detail">
+                                <h4>Debates</h4>
+                                <ul>
+                                    <li><i class="las la-arrow-right"></i>Teach how to build argument</li>
+                                    <li><i class="las la-arrow-right"></i>Research topics defend it</li>
+                                    <li><i class="las la-arrow-right"></i>Rebuttal strategies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="home-program-item">
+                        <div class="home-program-icon">
+                            <div class="home-program-icon-shape">
+                                <i class="las la-dollar-sign"></i>
+                            </div>
+                        </div>
+                        <div class="home-program-content">
+                            <div class="home-program-detail">
+                                <h4>Personal Finance</h4>
+                                <ul>
+                                    <li><i class="las la-arrow-right"></i>Teach Key Money Principals</li>
+                                    <li><i class="las la-arrow-right"></i>Different Saving & Investments</li>
+                                    <li><i class="las la-arrow-right"></i>Assets, Liabilities, Cashflow</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-camp">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-title">
+                        <div class="heading">
+                            <h3> 
+                                <span class="heading-icon">
+                                    Online
+                                    <img src="images/heading-bg.png" alt="">
+                                </span> 
+                                Courses and <br>
+                                Camps
+                            </h3>
+                        </div>
+                        <div class="home-camp-bg">
+                            <img src="images/hex-dots.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course1.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Public Speaking: Young Masters</h4>
+                                <p>In this course, our students begin to understand the oomph and expressions in their speeches, memorize and recite poems, and enhance their dialogue delivery. </p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course2.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Public Speaking: Confident Speakers and Writers</h4>
+                                <p>In this course, our students learn how to write and present poems, speeches, and stories. </p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course3.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Public Speaking and Debate Skills</h4>
+                                <p>In this course, our students become more confident with debating and presenting evidence alongside those claims. </p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course4.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Advanced Public Speaking and Debate Skills</h4>
+                                <p>In this advanced course, our students take it a notch higher, learning how to write well-structured speeches and learn different styles of writing. </p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course5.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Smart Money & Investing</h4>
+                                <p>In this course, our students learn money management including corporate shopping, salary planning, budgeting a trip, and wants and need planning. They study entrepreneurship, loans, taxes, and more. </p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course6.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Building Confidence in Public Speaking</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="home-camp-item">
+                        <div class="home-camp-img">
+                            <img src="images/course7.jpg" alt="">
+                        </div>
+                        <div class="home-camp-content">
+                            <div class="home-camp-detail">
+                                <div class="home-camp-age">
+                                    <i class="las la-user"></i>
+                                    Age: 7-10 Yrs
+                                </div>
+                                <h4>Master of Public Speaking & Debate</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="home-camp-link">
+                                <a href="#" class="home-camp-learn">Learn More</a>
+                                <a href="#" class="btn-cus btn-dark-blue" onclick="enquireFunction()">Check Availability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-philosophy">
+        <div class="home-philosophy-bg">
+            <img src="images/bg_2.png" alt="">
+        </div>
+        <div class="container">
+            <div class="heading heading-light text-center">
+                <h3> 
+                    <span class="heading-icon">
+                        Gurus
+                        <img src="images/heading-bg.png" alt="">
+                    </span> 
+                    Philosophy
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="home-philosophy-content">
+                        <p>It is impossible to fear any trait if one takes professional training and practices it regularly in a fun conducive environment under the right guidance.</p>
+                        <p>That is the basis of Guru's Education courses. Gurus team consists of very well-qualified and energetic professionals who are experts in their fields but all of them share a common passion for empowering the young generation. They provide the direction and leadership in assisting children to attain these life-changing skills: Building Confidence!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-staff">
+        <div class="container">
+            <div class="heading text-center">
+                <h3>Our 
+                    <span class="heading-icon">
+                        Staff
+                        <img src="images/heading-bg.png" alt="">
+                    </span> 
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-staff-content">
+                        <p>Our staff is professional teachers with tremendous experience teaching Public Speaking, Debate, Philosophy, American Literature, and Theatre Arts. The team includes high school debate coaches, directors, artists, and authors. Our entire team is very passionate about teaching communication skills and debating, We believe that these skills are very important for an individual's success and that each student should master these skills.</p>
+                    </div>
+                    <div class="home-staff-slider">
+                        <div class="owl-one owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff1.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Romeo Marquez Jr.
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Romeo Marquez Jr.</b> is an international keynote speaker, author of the #1 Amazon Best-selling book "The Success Messages," and creator & host of Superstar Success University. He has delivered more than a 1,000 presentations to over 200,000 audience members across the United States, Canada, Asia, and Europe on stages that range from TEDx to the National Speakers Association Convention.Romeo earned his B.A from UCLA's School of Theatre, Film & Television and had trained with an elite group of global success leaders personally invited by Jack Canfield, #1 New York Times Best-selling author and co-creator of the "Chicken Soup for the Soul" series. As a professor for theatre, film & television professor and acting coach, his clients have worked on television shows with major productions such as Disney, Nickelodeon, Cartoon Network, ABC, CBS, and various commercials. Romeo's greatest passion is empowering the younger generation to utilize their voice, talents, and gifts to create greater positive change in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff2.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Ms. Jasmine Magallanes
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Ms. Jasmine Magallanes</b> graduated with highest honors in Communication Studies from Chabot College. She has mentored college level communication majors and developed Public Speaking and Debate programs. Jasmine is also a professional singer, actress, stage performer, 18 Time National and World Champion Martial Artist and Hall of Famer. Her acquired fame and skills have led to multiple Hollywood invitations and productions. Among being a VIP special guest and performing for the Bruce Lee “Enter the Dragon” reunion, she was also invited to walk the red carpet with Jackie Chan for the 2010 Hollywood premiere of “The Karate Kid” movie. Jasmine is an amazing teacher who utilizes her many talents and experiences to inspire and teach students the needed skills required to achieve their fullest potential.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff3.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Teirrah McNair
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Teirrah McNair</b>  (aka Ms.T/Rev T) is an unstoppable people builder, pastor and published author on a mission to equip her audiences with well-crafted strategies for successful living. Whether on the road preaching or at home in the bay area facilitating soft skills workshops, Rev T brings a special blend of energy, humor and passion to the table. Her 25 plus years of experience includes seasons of coordinating an employment program for youth at risk, serving as an artist in residence for both California and Alaska’s art councils, as well as a nine-year stint as a literacy specialist. Additionally, she enjoyed a robust career as an actress and graced stages internationally with a wide array of quirky characters. One of those characters, Lucille Nadine Alexander, appears now as a character in one of the children’s books McNair has authored. McNair’s many published books can be found on Amazon at http://www.amazon.com/Teirrah-McNair/e/B0076ZX7W0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff1.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Romeo Marquez Jr.
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Romeo Marquez Jr.</b> is an international keynote speaker, author of the #1 Amazon Best-selling book "The Success Messages," and creator & host of Superstar Success University. He has delivered more than a 1,000 presentations to over 200,000 audience members across the United States, Canada, Asia, and Europe on stages that range from TEDx to the National Speakers Association Convention.Romeo earned his B.A from UCLA's School of Theatre, Film & Television and had trained with an elite group of global success leaders personally invited by Jack Canfield, #1 New York Times Best-selling author and co-creator of the "Chicken Soup for the Soul" series. As a professor for theatre, film & television professor and acting coach, his clients have worked on television shows with major productions such as Disney, Nickelodeon, Cartoon Network, ABC, CBS, and various commercials. Romeo's greatest passion is empowering the younger generation to utilize their voice, talents, and gifts to create greater positive change in the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff2.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Ms. Jasmine Magallanes
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Ms. Jasmine Magallanes</b> graduated with highest honors in Communication Studies from Chabot College. She has mentored college level communication majors and developed Public Speaking and Debate programs. Jasmine is also a professional singer, actress, stage performer, 18 Time National and World Champion Martial Artist and Hall of Famer. Her acquired fame and skills have led to multiple Hollywood invitations and productions. Among being a VIP special guest and performing for the Bruce Lee “Enter the Dragon” reunion, she was also invited to walk the red carpet with Jackie Chan for the 2010 Hollywood premiere of “The Karate Kid” movie. Jasmine is an amazing teacher who utilizes her many talents and experiences to inspire and teach students the needed skills required to achieve their fullest potential.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-staff-item">
+                                    <div class="home-staff-img">
+                                        <img src="images/staff3.jpg" alt="">
+                                    </div>
+                                    <div class="home-staff-name">
+                                        Teirrah McNair
+                                    </div>
+                                    <div class="staff-desc">
+                                        <p><b>Teirrah McNair</b>  (aka Ms.T/Rev T) is an unstoppable people builder, pastor and published author on a mission to equip her audiences with well-crafted strategies for successful living. Whether on the road preaching or at home in the bay area facilitating soft skills workshops, Rev T brings a special blend of energy, humor and passion to the table. Her 25 plus years of experience includes seasons of coordinating an employment program for youth at risk, serving as an artist in residence for both California and Alaska’s art councils, as well as a nine-year stint as a literacy specialist. Additionally, she enjoyed a robust career as an actress and graced stages internationally with a wide array of quirky characters. One of those characters, Lucille Nadine Alexander, appears now as a character in one of the children’s books McNair has authored. McNair’s many published books can be found on Amazon at http://www.amazon.com/Teirrah-McNair/e/B0076ZX7W0</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section home-testimonial">
+        <img class="home-testimonial-bg1" src="images/testimonial-bg1.png" alt="">
+        <img class="home-testimonial-bg2" src="images/testimonial-bg2.png" alt="">
+        <div class="container">
+            <div class="heading heading-light text-center">
+                <h3>Parents and 
+                    <span class="heading-icon">
+                        Students
+                        <img src="images/heading-bg.png" alt="">
+                    </span> 
+                    Testimonials
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="home-testimonial-slider">
+                        <img class="home-testimonial-sliderbg1" src="images/testimonial-sliderbg1.png" alt="">
+                        <img class="home-testimonial-sliderbg2" src="images/testimonial-sliderbg2.png" alt="">
+                        <div class="owl-two owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="home-testimonial-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="home-testimonial-img">
+                                                <div class="home-testimonial-vdo-icon">
+                                                    <i class="las la-play"></i>
+                                                </div>
+                                                <img src="images/testimonial-vdo.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="home-testimonial-content">
+                                                <div class="home-testimonial-name">Justin Case 
+                                                    <span>Student</span>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="home-testimonial-item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="home-testimonial-img">
+                                                <div class="home-testimonial-vdo-icon">
+                                                    <i class="las la-play"></i>
+                                                </div>
+                                                <img src="images/testimonial-vdo.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="home-testimonial-content">
+                                                <div class="home-testimonial-name">Justin Case 
+                                                    <span>Student</span>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="need-help-bg" onclick="helpClose()" style="transform: translateY(100%);"></div>
+    <div class="need-help-section" id="help-form" style="transform: translateY(100%);">
+        <div class="need-help-btn">
+            <button onclick="helpFunction()">Need More Help?</button>
+        </div>
+        <div class="need-help-form">
+            <form class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" placeholder="Phone no.">
+                </div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Select courses you are interested in</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Young Masters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking: Confident Speakers and Writers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Advanced Public Speaking and Debate Skills
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Smart Money & Investing
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" rows="4" placeholder="Your question"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn-cus btn-dark-blue">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-content">
+                            <h2>Please feel free to get in touch with us</h2>
+                            <div class="footer-contact-item">
+                                <span>Call Us or Text Us:</span>
+                                <a href="tel:+15105732497">+1-510-573-2497</a>
+                            </div>
+                            <div class="footer-contact-item">
+                                <span>Email Us:</span>
+                                <a href="mailto:info@guruseducation.com">info@guruseducation.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-form">
+                            <h5>Speak to one of our Advisors about a suitable program for you child?</h5>
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Phone no.">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-select">
+                                      <option selected disabled>Select Child Age</option>
+                                      <option>7</option>
+                                      <option>8</option>
+                                      <option>9</option>
+                                      <option>10</option>
+                                      <option>11</option>
+                                      <option>12</option>
+                                    </select>
+                                  </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" rows="4" placeholder="Any Concerns"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-cus btn-dark-blue">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2022 Gurus Educational Services. All rights reserved
+        </div>
+    </footer>
+
+    
+    
+    
+    
+    
+    
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.owl-one').owlCarousel({
+            margin: 0,
+            nav: true,
+            loop: true,
+            autoplay:true,
+            dots:false,
+            smartSpeed: 2000,
+            autoplayTimeout: 5000,
+            autoplayHoverPause:true,
+            navText:['<i class="las la-angle-left"></i>','<i class="las la-angle-right"></i>'],
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+        });
+        $('.owl-two').owlCarousel({
+            margin: 0,
+            nav: true,
+            loop: true,
+            autoplay:true,
+            dots:false,
+            navText:['<i class="las la-angle-left"></i>','<i class="las la-angle-right"></i>'],
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 1
+              }
+            }
+        });
+    });
+</script>
+<script>
+    function helpFunction() {
+        if(document.getElementById('help-form').style.transform == "translateY(100%)"){ 
+            document.getElementById('help-form').style.transform = "translateY(0)";
+            document.getElementById('need-help-bg').style.transform = "translateY(0)";
+        }
+        else{ 
+            document.getElementById('help-form').style.transform = "translateY(100%)";
+            document.getElementById('need-help-bg').style.transform = "translateY(100%)";
+        }
+    }
+    function helpClose() {
+        document.getElementById('help-form').style.transform = "translateY(100%)";
+        document.getElementById('need-help-bg').style.transform = "translateY(100%)";
+    }
+    function enquireFunction() {
+        if(document.getElementById('enquireform').style.display == "none"){ 
+            document.getElementById('enquireform').style.display = "flex";
+        }
+        else{ 
+            document.getElementById('enquireform').style.display = "none";
+            
+        }
+    }
+    function enquireClose() {
+        document.getElementById('enquireform').style.display = "none";
+    }
+    window.onload = function() {
+        window.setTimeout(function(){
+            document.getElementById('offerpopup').className = 'offer-popup offer-popup-enable';
+        }, 3000);
+        
+    };
+    function offerClose() {
+        document.getElementById("offerpopup").classList.remove("offer-popup-enable");
+    }
+</script>
+    
+</body>
+</html>
